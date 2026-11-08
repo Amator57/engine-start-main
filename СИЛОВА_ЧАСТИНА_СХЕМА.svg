@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 960" font-family="Arial, sans-serif">
+  <rect x="0" y="0" width="1500" height="960" fill="#ffffff"/>
+  <text x="40" y="45" font-size="18" font-weight="bold" fill="#1a1a1a">Силова частина реле плавного пуску ~2 кВт (v1.1)</text>
+  <text x="40" y="67" font-size="12" fill="#1a1a1a">ESP32-C3 MINI · SoftStart-2kW v1.0.0 · 230 В AC / 50 Гц · зміни: +F1, +RV1 (MOV 275 VAC), R1 150 Ом, R2/R3 33 кОм, снаббер 100 Ω + 0.1 µF X2, +R_gk 1 кΩ</text>
+
+  <g fill="none" stroke="#1a1a1a" stroke-width="2">
+    <!-- MAIN LINE -->
+    <path d="M46,260 H102"/>
+    <line x1="102" y1="260" x2="152" y2="230"/>
+    <path d="M157,260 H210"/>
+    <rect x="210" y="246" width="70" height="28"/>
+    <path d="M280,260 H400"/>
+    <path d="M400,180 V340"/>
+    <rect x="390" y="340" width="20" height="32"/>
+    <path d="M400,372 V430"/>
+    <!-- K1 branch -->
+    <path d="M400,180 H452"/>
+    <line x1="456" y1="178" x2="520" y2="150"/>
+    <path d="M526,180 H690"/>
+    <path d="M690,180 V260"/>
+    <path d="M690,260 H702"/>
+    <!-- Triac VS1 -->
+    <path d="M400,260 H455"/>
+    <circle cx="500" cy="260" r="45"/>
+    <path d="M545,260 H700"/>
+    <path d="M506,264 V468"/>
+    <!-- Snubber branch -->
+    <path d="M400,340 H540"/>
+    <rect x="540" y="330" width="60" height="20"/>
+    <path d="M600,340 H656"/>
+    <line x1="656" y1="322" x2="656" y2="358"/>
+    <line x1="666" y1="322" x2="666" y2="358"/>
+    <path d="M666,340 H700"/>
+    <path d="M700,340 V256"/>
+    <!-- B to ACS712 to motor -->
+    <path d="M700,260 H770"/>
+    <rect x="770" y="215" width="170" height="90"/>
+    <path d="M940,260 H1020"/>
+    <rect x="1020" y="205" width="210" height="120"/>
+    <path d="M1120,325 V430"/>
+    <!-- N rail and PE -->
+    <path d="M40,430 H1120"/>
+    <path d="M40,485 H240"/>
+    <!-- ZC: dropline, R2, bridge -->
+    <path d="M330,260 V605"/>
+    <path d="M330,605 H370"/>
+    <rect x="370" y="595" width="70" height="20"/>
+    <path d="M440,605 H500"/>
+    <rect x="500" y="580" width="120" height="120"/>
+    <path d="M620,605 H625"/>
+    <rect x="625" y="595" width="60" height="20"/>
+    <path d="M685,605 H700"/>
+    <rect x="700" y="570" width="160" height="160"/>
+    <!-- PC817 internals -->
+    <path d="M700,605 H715"/>
+    <path d="M733,613 V685 H700"/>
+    <path d="M700,685 H620"/>
+    <path d="M744,618 L810,630" stroke="#555555" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <path d="M744,630 L810,642" stroke="#555555" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <circle cx="825" cy="645" r="20"/>
+    <line x1="815" y1="628" x2="815" y2="662"/>
+    <path d="M815,632 L852,612 V605 H860"/>
+    <path d="M815,658 L852,678 V685 H860"/>
+    <path d="M790,556 V744" stroke="#555555" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <!-- PC817 outputs -->
+    <path d="M860,605 H900"/>
+    <rect x="892" y="556" width="16" height="28"/>
+    <path d="M900,584 V605"/>
+    <path d="M900,556 V550"/>
+    <path d="M900,605 V698"/>
+    <path d="M860,685 H893 V735"/>
+    <line x1="878" y1="745" x2="908" y2="745"/>
+    <line x1="883" y1="752" x2="903" y2="752"/>
+    <line x1="888" y1="759" x2="898" y2="759"/>
+    <!-- Gate drive inset -->
+    <rect x="1040" y="625" width="160" height="140"/>
+    <path d="M946,655 H1000"/>
+    <rect x="1000" y="645" width="30" height="20"/>
+    <path d="M1030,655 H1040"/>
+    <path d="M1040,655 H1057"/>
+    <path d="M1075,667 V720 H1040"/>
+    <path d="M1040,720 H975 V742"/>
+    <line x1="960" y1="742" x2="990" y2="742"/>
+    <line x1="965" y1="749" x2="985" y2="749"/>
+    <line x1="970" y1="756" x2="980" y2="756"/>
+    <path d="M1120,618 V778" stroke="#555555" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <path d="M1162,655 H1200"/>
+    <path d="M1158,656 V720 H1200"/>
+    <path d="M1200,655 H1225"/>
+    <rect x="1225" y="645" width="60" height="20"/>
+    <path d="M1285,655 H1325"/>
+    <path d="M1325,655 H1345"/>
+    <rect x="1345" y="645" width="65" height="20"/>
+    <path d="M1410,655 H1480"/>
+    <path d="M1200,720 H1480"/>
+  </g>
+
+  <g fill="#1a1a1a" stroke="none">
+    <!-- junction dots -->
+    <circle cx="40" cy="260" r="6"/>
+    <circle cx="102" cy="260" r="3"/>
+    <circle cx="157" cy="260" r="3.5"/>
+    <circle cx="400" cy="260" r="4"/>
+    <circle cx="330" cy="260" r="3.5"/>
+    <circle cx="400" cy="430" r="3.5"/>
+    <circle cx="285" cy="430" r="3.5"/>
+    <circle cx="454" cy="180" r="3"/>
+    <circle cx="526" cy="180" r="3.5"/>
+    <circle cx="700" cy="260" r="4"/>
+    <circle cx="34" cy="430" r="6"/>
+    <circle cx="34" cy="485" r="6"/>
+    <circle cx="900" cy="605" r="3.5"/>
+    <circle cx="900" cy="546" r="6"/>
+    <circle cx="940" cy="655" r="6"/>
+    <circle cx="1325" cy="655" r="4"/>
+    <!-- polygons -->
+    <polygon points="474,247 474,267 494,257"/>
+    <polygon points="526,253 526,273 506,263"/>
+    <polygon points="715,598 715,612 731,605"/>
+    <polygon points="1057,648 1057,662 1073,655"/>
+    <polygon points="1145,645 1145,665 1162,655"/>
+    <polygon points="1175,645 1175,665 1158,655"/>
+    <polygon points="894,696 906,696 900,710"/>
+    <polygon points="1224,713 1224,727 1210,720"/>
+  </g>
+
+  <g fill="none" stroke="#1a1a1a" stroke-width="2">
+    <!-- open ports -->
+    <circle cx="506" cy="472" r="4" fill="#ffffff"/>
+    <circle cx="1486" cy="655" r="5" fill="#ffffff"/>
+    <circle cx="1486" cy="720" r="5" fill="#ffffff"/>
+  </g>
+
+  <g fill="#1a1a1a" stroke="none" font-size="11">
+    <text x="18" y="240" font-size="12">L (230 В AC)</text>
+    <text x="18" y="420" font-size="12">N (230 В AC)</text>
+    <text x="14" y="472" font-size="12">PE</text>
+    <text x="248" y="490" font-size="12">→ корпус приладу і двигуна</text>
+    <text x="127" y="206" text-anchor="middle">QF1 2P</text>
+    <text x="127" y="221" text-anchor="middle">16–25 А</text>
+    <text x="245" y="238" text-anchor="middle">F1 T10A</text>
+    <text x="405" y="140" font-size="13">K1 — байпас-реле (NO–COM), 25–40 А</text>
+    <text x="405" y="157" font-size="11">(котушка — модуль реле, IN від GPIO6)</text>
+    <text x="500" y="200" text-anchor="middle" font-size="12">VS1 BTA41-600B</text>
+    <text x="428" y="228" text-anchor="middle" font-size="10">MT2</text>
+    <text x="572" y="228" text-anchor="middle" font-size="10">MT1</text>
+    <text x="520" y="476" font-size="11">G → до блока керування затвором (нижче)</text>
+    <text x="520" y="316" font-size="11">R_sn 100 Ω · 2 W</text>
+    <text x="661" y="378" text-anchor="middle" font-size="11">C_sn 0.1 µF X2</text>
+    <text x="414" y="372" font-size="11">RV1 MOV 275 VAC</text>
+    <text x="705" y="252" font-size="10">IP+</text>
+    <text x="785" y="240" font-size="12">U3</text>
+    <text x="782" y="266" font-size="13">ACS712-30A</text>
+    <text x="785" y="290" font-size="10">(IP+ → IP− по фазі)</text>
+    <text x="1125" y="243" text-anchor="middle" font-size="13">НАВАНТАЖЕННЯ</text>
+    <text x="1125" y="270" text-anchor="middle" font-size="13">ДВИГУН</text>
+    <text x="1125" y="297" text-anchor="middle" font-size="13">≈ 2 кВт</text>
+    <text x="1130" y="355" font-size="10">N_LOAD</text>
+    <text x="60" y="560" font-size="13" font-weight="bold">ДЕТЕКТОР НУЛЯ (ZC) — гальванічно розв'язаний</text>
+    <text x="352" y="586" font-size="11">R2 33k 2 W</text>
+    <text x="560" y="634" text-anchor="middle" font-size="12">DB107</text>
+    <text x="560" y="654" text-anchor="middle" font-size="10">(VD1)</text>
+    <text x="375" y="668" text-anchor="middle" font-size="11">R3 33k 2 W</text>
+    <text x="630" y="586" font-size="11">R4 1 kΩ</text>
+    <text x="795" y="542" text-anchor="middle" font-size="11">гальванічна розв'язка</text>
+    <text x="918" y="574" font-size="11">R5 10k</text>
+    <text x="916" y="543" font-size="11">+3.3 V</text>
+    <text x="912" y="706" font-size="11">GPIO5 (вхід з перериванням)</text>
+    <text x="845" y="782" font-size="10">GND (ESP32)</text>
+    <text x="1008" y="590" font-size="13" font-weight="bold">Ланцюг керування затвором VS1 (U1)</text>
+    <text x="925" y="660" text-anchor="end" font-size="11">GPIO4</text>
+    <text x="993" y="638" text-anchor="end" font-size="11">R1 150 Ω</text>
+    <text x="915" y="775" font-size="10">GND</text>
+    <text x="1218" y="638" font-size="11">Rg 360 Ω</text>
+    <text x="1268" y="692" font-size="10">затвор (G)</text>
+    <text x="1352" y="692" font-size="10">R_gk 1 kΩ</text>
+    <text x="1478" y="640" text-anchor="end" font-size="11">до MT1 (вузол B)</text>
+    <text x="1478" y="742" text-anchor="end" font-size="11">з MT2 (вузол A)</text>
+    <text x="1002" y="800" font-size="10">GPIO4 → R1: If ≈ 13 мА; імпульс U1 → Rg → затвор; R_gk — стійкість до dV/dt.</text>
+    <text x="40" y="935" font-size="11">З'єднання: A: MT2 · COM K1 · R_sn→C_sn → B · R2→AC1 | B: MT1 · NO K1 · C_sn · IP+ | N: AC2 через R3 · RV1 | Розпіновка ESP32 без змін (GPIO4/5/6/1/9)</text>
+    <!-- pin numbers -->
+    <text x="1034" y="650" text-anchor="end" font-size="9">1</text>
+    <text x="1034" y="716" text-anchor="end" font-size="9">2</text>
+    <text x="1206" y="650" font-size="9">6</text>
+    <text x="1206" y="716" font-size="9">4</text>
+  </g>
+</svg>
